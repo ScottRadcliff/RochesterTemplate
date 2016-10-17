@@ -26,3 +26,7 @@ gem_group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+run "rails generate rspec:install"
+
+run 'touch spec/factories.rb'
