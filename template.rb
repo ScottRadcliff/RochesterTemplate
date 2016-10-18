@@ -29,4 +29,14 @@ end
 
 run "rails generate rspec:install"
 
+run "rm -rf test"
+
 run 'touch spec/factories.rb'
+
+run 'rails generate clearance:install'
+
+run 'bundle exec rake db:migrate'
+
+run 'rails generate clearance:views'
+
+run 'rails generate clearance:routes'
